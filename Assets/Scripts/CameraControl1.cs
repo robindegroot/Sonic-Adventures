@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 // dankzij deze tutorial heb ik de camera kunnen maken https://code.tutsplus.com/tutorials/unity3d-third-person-cameras--mobile-11230
-public class CameraControl : MonoBehaviour
+public class CameraControl1 : MonoBehaviour
 {
     [SerializeField]
     private float damping = 1;
