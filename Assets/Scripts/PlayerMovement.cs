@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 
 	void Update () {
-		Debug.Log (maxSpeed);
+		//Debug.Log (maxSpeed);
 		previousLocation = currentLocation;    
 		currentLocation = transform.position;
 		if (Input.GetKeyDown ("space")) {
