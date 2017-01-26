@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 29aa34104566d0349b71e0df6cd6fee2
+timeCreated: 1485167966
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BigBaseMountian
+    100002: BigTop_moutain
+    100004: Boog_1
+    100006: Curve_on_pilars
+    100008: //RootNode
+    100010: pCube1
+    100012: Pilar
+    100014: Ramp
+    100016: Road2Loop
+    100018: Road_Down
+    100020: SideThin_Mountain
+    100022: SmallWall_1
+    100024: Wall_1
+    400000: BigBaseMountian
+    400002: BigTop_moutain
+    400004: Boog_1
+    400006: Curve_on_pilars
+    400008: //RootNode
+    400010: pCube1
+    400012: Pilar
+    400014: Ramp
+    400016: Road2Loop
+    400018: Road_Down
+    400020: SideThin_Mountain
+    400022: SmallWall_1
+    400024: Wall_1
+    2300000: BigBaseMountian
+    2300002: BigTop_moutain
+    2300004: Boog_1
+    2300006: Curve_on_pilars
+    2300008: pCube1
+    2300010: Pilar
+    2300012: Ramp
+    2300014: Road2Loop
+    2300016: Road_Down
+    2300018: SideThin_Mountain
+    2300020: SmallWall_1
+    2300022: Wall_1
+    3300000: BigBaseMountian
+    3300002: BigTop_moutain
+    3300004: Boog_1
+    3300006: Curve_on_pilars
+    3300008: pCube1
+    3300010: Pilar
+    3300012: Ramp
+    3300014: Road2Loop
+    3300016: Road_Down
+    3300018: SideThin_Mountain
+    3300020: SmallWall_1
+    3300022: Wall_1
+    4300000: BigTop_moutain
+    4300002: SideThin_Mountain
+    4300004: BigBaseMountian
+    4300006: Curve_on_pilars
+    4300008: Ramp
+    4300010: Pilar
+    4300012: Boog_1
+    4300014: Wall_1
+    4300016: Road_Down
+    4300018: SmallWall_1
+    4300020: Road2Loop
+    4300022: pCube1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

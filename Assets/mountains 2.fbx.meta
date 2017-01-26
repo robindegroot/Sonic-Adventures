@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: a687ad553ac5e874a91aacbbef85a579
+timeCreated: 1485353098
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BigBaseMountian
+    100002: BigTop_moutain
+    100004: Boog_1
+    100006: Boog_2
+    100008: Boog_3
+    100010: Curve_on_pilars
+    100012: Curve_on_pilars_bottom
+    100014: group1
+    100016: //RootNode
+    100018: Pilar
+    100020: Pilar1
+    100022: Pilar10
+    100024: Pilar2
+    100026: Pilar3
+    100028: Pilar4
+    100030: Pilar5
+    100032: Pilar6
+    100034: Pilar7
+    100036: Pilar8
+    100038: Pilar9
+    100040: pPlane1
+    100042: pPlane2
+    100044: Ramp
+    100046: Road2Loop
+    100048: Road_Down
+    100050: SideThin_Mountain
+    100052: SmallWall_1
+    100054: SmallWall_2
+    100056: Wall_1
+    100058: Wall_2
+    400000: BigBaseMountian
+    400002: BigTop_moutain
+    400004: Boog_1
+    400006: Boog_2
+    400008: Boog_3
+    400010: Curve_on_pilars
+    400012: Curve_on_pilars_bottom
+    400014: group1
+    400016: //RootNode
+    400018: Pilar
+    400020: Pilar1
+    400022: Pilar10
+    400024: Pilar2
+    400026: Pilar3
+    400028: Pilar4
+    400030: Pilar5
+    400032: Pilar6
+    400034: Pilar7
+    400036: Pilar8
+    400038: Pilar9
+    400040: pPlane1
+    400042: pPlane2
+    400044: Ramp
+    400046: Road2Loop
+    400048: Road_Down
+    400050: SideThin_Mountain
+    400052: SmallWall_1
+    400054: SmallWall_2
+    400056: Wall_1
+    400058: Wall_2
+    2300000: BigBaseMountian
+    2300002: BigTop_moutain
+    2300004: Boog_1
+    2300006: Boog_2
+    2300008: Boog_3
+    2300010: Curve_on_pilars
+    2300012: Curve_on_pilars_bottom
+    2300014: Pilar
+    2300016: Pilar1
+    2300018: Pilar10
+    2300020: Pilar2
+    2300022: Pilar3
+    2300024: Pilar4
+    2300026: Pilar5
+    2300028: Pilar6
+    2300030: Pilar7
+    2300032: Pilar8
+    2300034: Pilar9
+    2300036: pPlane1
+    2300038: pPlane2
+    2300040: Ramp
+    2300042: Road2Loop
+    2300044: Road_Down
+    2300046: SideThin_Mountain
+    2300048: SmallWall_1
+    2300050: SmallWall_2
+    2300052: Wall_1
+    2300054: Wall_2
+    3300000: BigBaseMountian
+    3300002: BigTop_moutain
+    3300004: Boog_1
+    3300006: Boog_2
+    3300008: Boog_3
+    3300010: Curve_on_pilars
+    3300012: Curve_on_pilars_bottom
+    3300014: Pilar
+    3300016: Pilar1
+    3300018: Pilar10
+    3300020: Pilar2
+    3300022: Pilar3
+    3300024: Pilar4
+    3300026: Pilar5
+    3300028: Pilar6
+    3300030: Pilar7
+    3300032: Pilar8
+    3300034: Pilar9
+    3300036: pPlane1
+    3300038: pPlane2
+    3300040: Ramp
+    3300042: Road2Loop
+    3300044: Road_Down
+    3300046: SideThin_Mountain
+    3300048: SmallWall_1
+    3300050: SmallWall_2
+    3300052: Wall_1
+    3300054: Wall_2
+    4300000: BigTop_moutain
+    4300002: SideThin_Mountain
+    4300004: BigBaseMountian
+    4300006: Curve_on_pilars
+    4300008: Ramp
+    4300010: Pilar
+    4300012: Boog_1
+    4300014: Wall_1
+    4300016: Road_Down
+    4300018: SmallWall_1
+    4300020: Road2Loop
+    4300022: pPlane1
+    4300024: pPlane2
+    4300026: Curve_on_pilars_bottom
+    4300028: Pilar1
+    4300030: Pilar2
+    4300032: Pilar3
+    4300034: Pilar4
+    4300036: Pilar5
+    4300038: Pilar6
+    4300040: Pilar7
+    4300042: Pilar8
+    4300044: Pilar9
+    4300046: Pilar10
+    4300048: Wall_2
+    4300050: SmallWall_2
+    4300052: Boog_2
+    4300054: Boog_3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
