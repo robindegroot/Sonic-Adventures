@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void Update () {
+<<<<<<< HEAD
 		if (!moving) {
 			animStill ();
 		} else if (moving) {
@@ -50,8 +51,14 @@ public class PlayerMovement : MonoBehaviour {
 		if (Jumping) {
 			animFall ();
 		}
+=======
+
+		//Debug.Log (maxSpeed);
+
+>>>>>>> origin/master
 		//Debug.Log (curve);
 		prevRotationY = transform.rotation.eulerAngles.y;
+
 		previousLocation = currentLocation;    
 		currentLocation = transform.position;
 		if (Input.GetKeyDown ("space")) {
@@ -93,7 +100,7 @@ public class PlayerMovement : MonoBehaviour {
 		ControllPlayer ();
 	}
 
-	void FixedUpdate(){
+    private void FixedUpdate(){
 
 		prevRotationY = transform.rotation.eulerAngles.y;
 		previousLocation = currentLocation;    
@@ -142,7 +149,7 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionStay(Collision other)
+    private void OnCollisionStay(Collision other)
 	{
 		if (other.gameObject.tag == "looping") {
 			gravity = false;
@@ -165,11 +172,12 @@ public class PlayerMovement : MonoBehaviour {
 			
 	}
 
-	void OnTriggerStay(Collider other){
+    private void OnTriggerStay(Collider other){
 		
 
 	}
-	void OnCollisionEnter(Collision other){
+
+    private void OnCollisionEnter(Collision other){
 
 		if (other.gameObject.tag == "looping") {
 			
@@ -186,9 +194,9 @@ public class PlayerMovement : MonoBehaviour {
 	   
 
 	}
-	
 
-	void Jump(){
+
+    private void Jump(){
 		if (!Jumping && !Looping) {
 			GetComponent<Rigidbody> ().AddForce (Vector3.up, ForceMode.Impulse);
 			Jumping = true;
