@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraSwitch : MonoBehaviour
 {
-    private bool isSeconary;
+    private bool isSeconary = false;
     public GameObject Camera1;
     public GameObject Camera2;
 
@@ -18,22 +18,18 @@ public class CameraSwitch : MonoBehaviour
     {
         Debug.Log("hit");
 
-           isSeconary = !isSeconary;
-            if (isSeconary == false)
-            {
-                Camera2.SetActive(true);
-                Camera1.SetActive(false);
-            }
+
+        Camera2.SetActive(true);
+        Camera1.SetActive(false);
+
 
     }
     private void OnTriggerExit(Collider other)
     {
-        isSeconary = true;
-        if(isSeconary == true)
-        {
-            Camera2.SetActive(false);
-            Camera1.SetActive(true);
-        }
+
+        Camera2.SetActive(false);
+        Camera1.SetActive(true);
+
     }
 
 }
