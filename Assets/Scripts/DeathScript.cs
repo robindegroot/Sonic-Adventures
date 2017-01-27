@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraOrbit : MonoBehaviour {
+public class DeathScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

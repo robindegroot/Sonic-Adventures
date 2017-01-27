@@ -19,7 +19,7 @@ public class OrbitalCamera : MonoBehaviour
     private float _x = 0.0f;
     private float _y = 0.0f;
     private Vector3 _distanceVector;
-
+    private bool ZoomStop;
 
     private void Start ()
     {
@@ -45,9 +45,19 @@ public class OrbitalCamera : MonoBehaviour
 
     private void RotateControls()
     {
+        /*
         if (!Input.GetButton("Fire1")) return;
         _x += Input.GetAxis("Mouse X") * XSpeed;
         _y += -Input.GetAxis("Mouse Y")* YSpeed;
+        */
+        if (Input.GetKey(KeyCode.E))
+        {
+            _x -= XSpeed;
+        }
+        if(Input.GetKey(KeyCode.Q))
+        {
+            _x += XSpeed;
+        }
     }
 
     private void Rotate( float x, float y )
@@ -78,9 +88,15 @@ public class OrbitalCamera : MonoBehaviour
 
     private void ZoomIn()
     {
+
+
         Distance -= ZoomStep;
         _distanceVector = new Vector3(0.0f,0.0f,-Distance);
         this.Rotate(_x,_y);
+        if (ZoomStep >= 5)
+        {
+            ZoomStop = false;
+        }
     }
 
 
@@ -90,5 +106,4 @@ public class OrbitalCamera : MonoBehaviour
         _distanceVector = new Vector3(0.0f,0.0f,-Distance);
         this.Rotate(_x,_y);
     }
-
 }
