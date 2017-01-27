@@ -16,7 +16,7 @@ public class CameraSwitchR2Loop : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("LoopingCamera");
+        Debug.Log("R2LoopCamera");
         Camera2.SetActive(true);
         Camera1.SetActive(false);
     }
