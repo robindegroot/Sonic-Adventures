@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: d4bdea218db524049a4d5cb477c38257
+timeCreated: 1485356888
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Sonic_rig:Body_grp
+    100002: Sonic_rig:Head
+    100004: Sonic_rig:Hip_Grp
+    100006: Sonic_rig:Hips_Ctrl
+    100008: Sonic_rig:joint11
+    100010: Sonic_rig:joint11 1
+    100012: Sonic_rig:joint14
+    100014: Sonic_rig:joint14 1
+    100016: Sonic_rig:joint9
+    100018: Sonic_rig:joint9 1
+    100020: Sonic_rig:L_elbow
+    100022: Sonic_rig:L_enkle
+    100024: Sonic_rig:L_Finger
+    100026: Sonic_rig:L_Foot
+    100028: Sonic_rig:L_Hand
+    100030: Sonic_rig:L_Hip
+    100032: Sonic_rig:L_Knee
+    100034: Sonic_rig:L_shoulder
+    100036: Sonic_rig:L_wrist
+    100038: Sonic_rig:Neck
+    100040: Sonic_rig:pasted__SANNIC2
+    100042: Sonic_rig:R_elbow
+    100044: Sonic_rig:R_enkle
+    100046: Sonic_rig:R_Finger
+    100048: Sonic_rig:R_Foot
+    100050: Sonic_rig:R_Hand
+    100052: Sonic_rig:R_Hip
+    100054: Sonic_rig:R_Knee
+    100056: Sonic_rig:R_shoulder
+    100058: Sonic_rig:R_wrist
+    100060: Sonic_rig:Torso
+    100062: Sonic_rig:Torso_ctrl
+    100064: //RootNode
+    400000: Sonic_rig:Body_grp
+    400002: Sonic_rig:Head
+    400004: Sonic_rig:Hip_Grp
+    400006: Sonic_rig:Hips_Ctrl
+    400008: Sonic_rig:joint11
+    400010: Sonic_rig:joint11 1
+    400012: Sonic_rig:joint14
+    400014: Sonic_rig:joint14 1
+    400016: Sonic_rig:joint9
+    400018: Sonic_rig:joint9 1
+    400020: Sonic_rig:L_elbow
+    400022: Sonic_rig:L_enkle
+    400024: Sonic_rig:L_Finger
+    400026: Sonic_rig:L_Foot
+    400028: Sonic_rig:L_Hand
+    400030: Sonic_rig:L_Hip
+    400032: Sonic_rig:L_Knee
+    400034: Sonic_rig:L_shoulder
+    400036: Sonic_rig:L_wrist
+    400038: Sonic_rig:Neck
+    400040: Sonic_rig:pasted__SANNIC2
+    400042: Sonic_rig:R_elbow
+    400044: Sonic_rig:R_enkle
+    400046: Sonic_rig:R_Finger
+    400048: Sonic_rig:R_Foot
+    400050: Sonic_rig:R_Hand
+    400052: Sonic_rig:R_Hip
+    400054: Sonic_rig:R_Knee
+    400056: Sonic_rig:R_shoulder
+    400058: Sonic_rig:R_wrist
+    400060: Sonic_rig:Torso
+    400062: Sonic_rig:Torso_ctrl
+    400064: //RootNode
+    4300000: Sonic_rig:pasted__SANNIC2
+    7400000: Sonic_stand_take
+    9500000: //RootNode
+    13700000: Sonic_rig:pasted__SANNIC2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Sonic_stand_take
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Sonic_rig:L_Hip
+        weight: 1
+      - path: Sonic_rig:L_Hip/Sonic_rig:L_Knee
+        weight: 1
+      - path: Sonic_rig:L_Hip/Sonic_rig:L_Knee/Sonic_rig:L_enkle
+        weight: 1
+      - path: Sonic_rig:L_Hip/Sonic_rig:L_Knee/Sonic_rig:L_enkle/Sonic_rig:L_Foot
+        weight: 1
+      - path: Sonic_rig:L_Hip/Sonic_rig:L_Knee/Sonic_rig:L_enkle/Sonic_rig:L_Foot/Sonic_rig:joint9
+        weight: 1
+      - path: Sonic_rig:L_Hip/Sonic_rig:L_Knee/Sonic_rig:L_enkle/Sonic_rig:L_Foot/Sonic_rig:joint9/Sonic_rig:joint11
+        weight: 1
+      - path: Sonic_rig:L_shoulder
+        weight: 1
+      - path: Sonic_rig:L_shoulder/Sonic_rig:L_elbow
+        weight: 1
+      - path: Sonic_rig:L_shoulder/Sonic_rig:L_elbow/Sonic_rig:L_wrist
+        weight: 1
+      - path: Sonic_rig:L_shoulder/Sonic_rig:L_elbow/Sonic_rig:L_wrist/Sonic_rig:L_Hand
+        weight: 1
+      - path: Sonic_rig:L_shoulder/Sonic_rig:L_elbow/Sonic_rig:L_wrist/Sonic_rig:L_Hand/Sonic_rig:L_Finger
+        weight: 1
+      - path: Sonic_rig:L_shoulder/Sonic_rig:L_elbow/Sonic_rig:L_wrist/Sonic_rig:L_Hand/Sonic_rig:L_Finger/Sonic_rig:joint14
+        weight: 1
+      - path: Sonic_rig:pasted__SANNIC2
+        weight: 1
+      - path: Sonic_rig:R_Hip
+        weight: 1
+      - path: Sonic_rig:R_Hip/Sonic_rig:R_Knee
+        weight: 1
+      - path: Sonic_rig:R_Hip/Sonic_rig:R_Knee/Sonic_rig:R_enkle
+        weight: 1
+      - path: Sonic_rig:R_Hip/Sonic_rig:R_Knee/Sonic_rig:R_enkle/Sonic_rig:R_Foot
+        weight: 1
+      - path: Sonic_rig:R_Hip/Sonic_rig:R_Knee/Sonic_rig:R_enkle/Sonic_rig:R_Foot/Sonic_rig:joint9
+          1
+        weight: 1
+      - path: Sonic_rig:R_Hip/Sonic_rig:R_Knee/Sonic_rig:R_enkle/Sonic_rig:R_Foot/Sonic_rig:joint9
+          1/Sonic_rig:joint11 1
+        weight: 1
+      - path: Sonic_rig:R_shoulder
+        weight: 1
+      - path: Sonic_rig:R_shoulder/Sonic_rig:R_elbow
+        weight: 1
+      - path: Sonic_rig:R_shoulder/Sonic_rig:R_elbow/Sonic_rig:R_wrist
+        weight: 1
+      - path: Sonic_rig:R_shoulder/Sonic_rig:R_elbow/Sonic_rig:R_wrist/Sonic_rig:R_Hand
+        weight: 1
+      - path: Sonic_rig:R_shoulder/Sonic_rig:R_elbow/Sonic_rig:R_wrist/Sonic_rig:R_Hand/Sonic_rig:R_Finger
+        weight: 1
+      - path: Sonic_rig:R_shoulder/Sonic_rig:R_elbow/Sonic_rig:R_wrist/Sonic_rig:R_Hand/Sonic_rig:R_Finger/Sonic_rig:joint14
+          1
+        weight: 1
+      - path: Sonic_rig:Torso
+        weight: 1
+      - path: Sonic_rig:Torso/Sonic_rig:Neck
+        weight: 1
+      - path: Sonic_rig:Torso/Sonic_rig:Neck/Sonic_rig:Head
+        weight: 1
+      - path: Sonic_rig:Torso_ctrl
+        weight: 1
+      - path: Sonic_rig:Torso_ctrl/Sonic_rig:Body_grp
+        weight: 1
+      - path: Sonic_rig:Torso_ctrl/Sonic_rig:Hips_Ctrl
+        weight: 1
+      - path: Sonic_rig:Torso_ctrl/Sonic_rig:Hips_Ctrl/Sonic_rig:Hip_Grp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

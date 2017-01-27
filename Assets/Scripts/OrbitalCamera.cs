@@ -26,7 +26,7 @@ public class OrbitalCamera : MonoBehaviour
     public Transform _target;
 
     //The default distance of the camera from the target.
-    public float _distance = 20.0f;
+    public float _distance = 0.5f;
 
     //Control the speed of zooming and dezooming.
     public float _zoomStep = 1.0f;

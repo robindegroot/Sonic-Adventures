@@ -22,11 +22,34 @@ public class PlayerMovement : MonoBehaviour {
 	private Transform target;
 	private Rigidbody rigidbody;
 
+	public Animator anim;
+	private bool IDLE;
+	private bool RUN;
+	private bool RUN2;
+	private float FALL;
+
 	void Awake(){
+
+		anim = GetComponent<Animator> ();
 		rigidbody = GetComponent<Rigidbody> ();
+
+		animStill ();
 	}
 
 	void Update () {
+		if (!moving) {
+			animStill ();
+		} else if (moving) {
+			if (movementSpeed <= 1) {
+				animRun ();
+			}else if(movementSpeed > 1){
+				animRun2 ();
+			}
+		}
+
+		if (Jumping) {
+			animFall ();
+		}
 		//Debug.Log (curve);
 		prevRotationY = transform.rotation.eulerAngles.y;
 		previousLocation = currentLocation;    
@@ -41,19 +64,19 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (Looping) {
 			//gameObject.transform.Translate (0, -0.01f, 0);
-			maxSpeed = 5;
-			movementSpeed = 5;
+			maxSpeed = 2;
+			movementSpeed = 2;
 		} 
 
 		if (gravity) {
 			GetComponent<Rigidbody> ().AddForce (Physics.gravity * GetComponent<Rigidbody> ().mass);
 		} 
 
-		if (!moving && movementSpeed > 1) {
-			movementSpeed -= 0.5f;
-			if (movementSpeed < 1) {
+		if (!moving && movementSpeed > 0) {
+			movementSpeed -= 0.2f;
+			if (movementSpeed < 0) {
 
-				movementSpeed = 0.1f;
+				movementSpeed = 0f;
 			}
 		}
 
@@ -64,6 +87,7 @@ public class PlayerMovement : MonoBehaviour {
 			moving = true;
 		} else {
 			moving = false;
+
 		}
 
 		ControllPlayer ();
@@ -91,6 +115,9 @@ public class PlayerMovement : MonoBehaviour {
 
 	void ControllPlayer()
 	{
+		
+
+
 		
 		float moveHorizontal = Input.GetAxisRaw ("Horizontal");
 		float moveVertical = Input.GetAxisRaw ("Vertical");
@@ -133,7 +160,6 @@ public class PlayerMovement : MonoBehaviour {
 		}
 
 		if (other.gameObject.tag == "wall"){
-			//maxSpeed = 0.1f;
 			movementSpeed = 0.1f;
 		}
 			
@@ -146,6 +172,7 @@ public class PlayerMovement : MonoBehaviour {
 	void OnCollisionEnter(Collision other){
 
 		if (other.gameObject.tag == "looping") {
+			
 			gravity = false;
 			Looping = true;
 			playerRotation.z = other.transform.eulerAngles.z;
@@ -153,8 +180,8 @@ public class PlayerMovement : MonoBehaviour {
 		} else if (other.gameObject.tag == "ground"  && other.gameObject.tag != "wall") {
 			setPos0 ();
 			Jumping = false;
-			maxSpeed = 0.5f;
-			movementSpeed = 0.1f;
+			maxSpeed = 1;
+			//movementSpeed = 0.2f;
 		}
 	   
 
@@ -166,5 +193,38 @@ public class PlayerMovement : MonoBehaviour {
 			GetComponent<Rigidbody> ().AddForce (Vector3.up, ForceMode.Impulse);
 			Jumping = true;
 		}
+	}
+
+
+	void animStill(){
+		anim.SetBool ("IDLE", true);
+		anim.SetBool ("RUN", false);
+		anim.SetBool ("RUN2", false);
+		anim.SetBool ("FALL", false);
+
+	}
+
+	void animRun(){
+		anim.SetBool ("IDLE", false);
+		anim.SetBool ("RUN", true);
+		anim.SetBool ("RUN2", false);
+		anim.SetBool ("FALL", false);
+
+	}
+
+	void animRun2(){
+		anim.SetBool ("IDLE", false);
+		anim.SetBool ("RUN", false);
+		anim.SetBool ("RUN2", true);
+		anim.SetBool ("FALL", false);
+
+	}
+
+	void animFall(){
+		anim.SetBool ("IDLE", false);
+		anim.SetBool ("RUN", false);
+		anim.SetBool ("RUN2", false);
+		anim.SetBool ("FALL", true);
+
 	}
 }
