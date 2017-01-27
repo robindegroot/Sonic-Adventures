@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scripts/LoseCoins.cs.meta
 guid: 1899e11fd494343dea1d541e50dcd174
 timeCreated: 1485428723
@@ -6,6 +7,10 @@ timeCreated: 1485428723
 guid: b06439e5a5ba20b42ad7e157a97f0275
 timeCreated: 1485352373
 >>>>>>> origin/master:Assets/Scripts/LoseCoins.cs.meta
+=======
+guid: 950f2017627ce9b4f84f203e1344d2d3
+timeCreated: 1485351952
+>>>>>>> origin/master
 licenseType: Free
 MonoImporter:
   serializedVersion: 2

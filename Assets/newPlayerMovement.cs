@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class newPlayerMovement : MonoBehaviour { 
+public class newPlayerMovement : MonoBehaviour {
 	private float prevRotationY;
 	public float movementSpeed;
 	public float rotationSpeed;
@@ -20,14 +20,15 @@ public class newPlayerMovement : MonoBehaviour {
 	private Vector3 currentLocation;
 	public Vector3 playerRotation;
 	private GameObject target;
+	private GameObject player;
+	private GameObject camera;
 	private Rigidbody rigidbody;
-
 	public Animator anim;
-
-	static private float otherXValue = Quaternion.Euler(target.transform.eulerAngles.x;
 
 
 	void Awake(){
+		player = GameObject.Find("Player");
+		camera = GameObject.Find("Main Camera");
 
 		movementSpeed = 0;
 		rigidbody = GetComponent<Rigidbody> ();
@@ -38,10 +39,13 @@ public class newPlayerMovement : MonoBehaviour {
 	}
 
 	void Update () {
+		if (Looping) {
+			//gameObject.transform.Translate (0, -0.001f, 0);
+			Jumping = false;
+			//gravity = false;
+			GetComponent<Rigidbody> ().AddForce (gameObject.transform.forward * 10, ForceMode.Force);
+		}
 
-		//Debug.Log (maxSpeed);
-
-		//Debug.Log (curve);
 		prevRotationY = transform.rotation.eulerAngles.y;
 
 		previousLocation = currentLocation;    
@@ -55,9 +59,9 @@ public class newPlayerMovement : MonoBehaviour {
 		}
 
 		if (Looping) {
-			//gameObject.transform.Translate (0, -0.01f, 0);
-			maxSpeed = 1.5f;
-			movementSpeed = 1;
+			gameObject.transform.Translate (0, -0.01f, 0);
+			//maxSpeed = 1.5f;
+			//movementSpeed = 1;
 		} 
 
 		if (gravity) {
@@ -103,13 +107,16 @@ public class newPlayerMovement : MonoBehaviour {
 			animFall ();
 		}
 
+		if (Looping) {
+			animRun2 ();
+
+		}
+
 		float moveHorizontal = Input.GetAxisRaw ("Horizontal");
 		float moveVertical = Input.GetAxisRaw ("Vertical");
 
 
 		prevRotationY = transform.rotation.eulerAngles.y;
-		//previousLocation = currentLocation;    
-		//currentLocation = transform.position;
 		gravity = true;
 		Looping = false;
 		curve = false;
@@ -142,18 +149,22 @@ public class newPlayerMovement : MonoBehaviour {
 
 		movement.Set (moveHorizontal, 0f, moveVertical);
 
-		//if (!curve && !Looping) {
+		if (!curve && !Looping) {
 			movement = Camera.main.transform.TransformDirection (movement);
-		//} else {
-			//movement = transform.InverseTransformDirection (movement);
-		//}
+			movement = movement.normalized * movementSpeed * Time.deltaTime;
+			//movement = Camera.main.transform.TransformDirection (movement);
+			rigidbody.MovePosition (rigidbody.position + movement);
+		
+
+		} else {
+			//transform.Translate (movement * movementSpeed * Time.deltaTime, Space.Self);
+
+		}
 
 
 
-		movement = movement.normalized * movementSpeed * Time.deltaTime;
 
 
-		rigidbody.MovePosition (rigidbody.position + movement);
 
 
 		if (moveHorizontal != 0f || moveVertical != 0f) 
@@ -165,10 +176,8 @@ public class newPlayerMovement : MonoBehaviour {
 	private void OnCollisionStay(Collision other)
 	{
 		if (other.gameObject.tag == "looping") {
-			Jumping = false;
-			gravity = false;
 			Looping = true;
-			//playerRotation = other.transform.eulerAngles;
+
 			transform.eulerAngles = other.transform.eulerAngles;
 		} 
 		if (other.gameObject.tag == "curve") {
@@ -181,7 +190,7 @@ public class newPlayerMovement : MonoBehaviour {
 			gravity = false;
 			curve = true;
 			//playerRotation = other.transform.eulerAngles;
-			transform.eulerAngles = new Vector3(otherXValue, transform.eulerAngles.y, transform.eulerAngles.z);
+			transform.eulerAngles = other.transform.eulerAngles;
 
 		} else {
 			curve = false;
