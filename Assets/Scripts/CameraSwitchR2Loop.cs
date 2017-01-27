@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraSwitch : MonoBehaviour
+public class CameraSwitchR2Loop : MonoBehaviour
 {
     private bool isSeconary = false;
     public GameObject Camera1;
@@ -16,20 +16,15 @@ public class CameraSwitch : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit");
-
-
+        Debug.Log("LoopingCamera");
         Camera2.SetActive(true);
         Camera1.SetActive(false);
-
-
     }
     private void OnTriggerExit(Collider other)
     {
-
-        Camera2.SetActive(false);
+        Debug.Log("MainCamera");
         Camera1.SetActive(true);
-
+        Camera2.SetActive(false);
     }
 
 }
