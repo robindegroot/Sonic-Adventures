@@ -5,7 +5,7 @@ using System.Collections;
 public class OrbitalCamera : MonoBehaviour
 {
 
-<<<<<<< HEAD
+
     //The target of the camera. The camera will always point to this object.
     public Transform _target;
 
@@ -13,15 +13,10 @@ public class OrbitalCamera : MonoBehaviour
     public float _distance = 0.5f;
 
     //Control the speed of zooming and dezooming.
-    public float _zoomStep = 1.0f;
-=======
->>>>>>> origin/master
+    public float _zoomStep = 0.5f;
 
-    public Transform Target;
-    [SerializeField]
-    private float Distance = 15.0f;
-    [SerializeField]
-    private float ZoomStep = 1.0f;
+
+    
     [SerializeField]
     private float XSpeed = 1f;
     [SerializeField]
@@ -34,7 +29,7 @@ public class OrbitalCamera : MonoBehaviour
 
     private void Start ()
     {
-        _distanceVector = new Vector3(0.0f,0.0f,-Distance);
+        _distanceVector = new Vector3(0.0f,0.2f,-_distance);
 
         Vector2 angles = this.transform.localEulerAngles;
         _x = angles.x;
@@ -47,7 +42,7 @@ public class OrbitalCamera : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (!Target) return;
+        if (!_target) return;
         this.RotateControls();
         this.Zoom();
         this.Rotate(_x,_y);
@@ -58,7 +53,7 @@ public class OrbitalCamera : MonoBehaviour
     {
         if (!Input.GetButton("Fire1")) return;
         _x += Input.GetAxis("Mouse X") * XSpeed;
-        _y += -Input.GetAxis("Mouse Y")* YSpeed;
+        //_y += -Input.GetAxis("Mouse Y")* YSpeed;
     }
 
     private void Rotate( float x, float y )
@@ -66,7 +61,7 @@ public class OrbitalCamera : MonoBehaviour
 
         var rotation = Quaternion.Euler(y,x,0.0f);
 
-        var position = rotation * _distanceVector + Target.position;
+        var position = rotation * _distanceVector + _target.position;
 
 
         transform.rotation = rotation;
@@ -89,16 +84,16 @@ public class OrbitalCamera : MonoBehaviour
 
     private void ZoomIn()
     {
-        Distance -= ZoomStep;
-        _distanceVector = new Vector3(0.0f,0.0f,-Distance);
+        _distance -= _zoomStep;
+        _distanceVector = new Vector3(0.0f,0.0f,-_distance);
         this.Rotate(_x,_y);
     }
 
 
     private void ZoomOut()
     {
-        Distance += ZoomStep;
-        _distanceVector = new Vector3(0.0f,0.0f,-Distance);
+        _distance += _zoomStep;
+        _distanceVector = new Vector3(0.0f,0.0f,-_distance);
         this.Rotate(_x,_y);
     }
 
